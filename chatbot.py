@@ -7,11 +7,11 @@ import streamlit as st
 
 
 # Download required NLTK data
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
 
-with open("Dataset\chatbot dataset.txt", 'r', encoding='utf8', errors='ignore') as file:
+with open("chatbot dataset.txt", 'r', encoding='utf8', errors='ignore') as file:
     dataset = file.read()
 
 import pandas as pd
